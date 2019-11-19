@@ -8,3 +8,7 @@ spring:
         server-addr: localhost:8848
 server:
   port: 8081
+ribbon:
+  eager-load:
+    enabled: true # 开启饥饿加载
+    clients: # 为哪些服务开启饥饿加载
